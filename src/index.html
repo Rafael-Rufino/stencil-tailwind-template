@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="pt-BR">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />
+    <title>Stencil Component Starter</title>
+    <style>
+      .container {
+        background: '#fff';
+      }
+      .content {
+        display: flex;
+        width: 100%;
+        max-width: 432px;
+        margin: 0 auto;
+        justify-content: center;
+        flex-direction: column;
+      }
+    </style>
+
+    <script type="module" src="/build/stencil-tailwind-template.esm.js"></script>
+    <script nomodule src="/build/stencil-tailwind-template.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="content">
+        <heading-app title="Acessando sua conta" description="Informe seu login e senha para continuar"></heading-app>
+        <input-app label="Seu login" placeholder="E-mail, CPF, Usuário ou Celular" type="text" onChange="{}"></input-app>
+        <input-app label="Sua senha" placeholder="Digite a sua senha" type="password" onChange="{}"></input-app>
+        <checktext-app name="Manter conectado" type="checkbox" onChange="{}"></checktext-app>
+        <button-app type="submit" name="Acessar sua conta" onclick="{}"></button-app>
+        <link-app src="assets/lock.svg" title="Você deseja redefinir a senha ?" href="https://www.gazin.com.br" name="Esqueceu sua senha?"></link-app>
+      </div>
+    </div>
+  </body>
+</html>
